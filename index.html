@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gift Cards</title>  
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+
+    #story {
+      background-color: #00A88778;
+      background-image: url(https://ranchosanmiguelmarkets.com/wp-content/uploads/2020/09/bg-pattern-1.gif);
+      padding: 10px;
+    }
+
+    #story h1 {
+      text-align: center;
+      padding: 20px;
+      font-size: 48px;
+      font-weight: 500;
+      font-style: italic;
+      font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    }
+
+    h1 {
+      font-weight: 700;
+      font-style: italic;
+      /* font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; */
+    }
+
+    /* d-flex flex-lg-row flex-sm-column-reverse flex-md-column-reverse justify-content-around align-items-md-center align-items-sm-center */
+    #custComments {
+      /* margin: 0 30px; */
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+
+    }
+
+    #a1 a {
+
+      color: black !important;
+      text-decoration: none !important;
+    }
+
+
+    .box-1 {
+      /* font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; */
+      font-size: 24px !important;
+      font-weight: 500;
+      font-style: italic;
+      letter-spacing: 0px;
+      color: black !important;
+      width: 30vw;
+    }
+
+    .box-2 {
+      /* margin-left: 5vw; */
+      width: 60vw;
+    }
+
+    li {
+      list-style-type: none;
+
+      margin: 10px 0;
+
+    }
+
+    li a {
+      color: black;
+      text-decoration: none;
+      font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    }
+
+    .nav-link.active {
+      background-color: #00A887 !important;
+    }
+    #activeOne a{
+      color: white;
+    }
+    #activeOne,
+    li:hover {
+      /* color: white; */
+      background-color: #00A887;
+      /* font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; */
+    }
+    .nav-item a:hover{
+      color: white;
+    }
+    .nav-item a {
+      color: black;
+      text-decoration: none;
+    }
+
+    @media all and (max-width: 768px) {
+      .box-1 {
+        display: none;
+      }
+
+      #custComments {
+        display: block;
+      }
+
+      .box-2 {
+        width: 100vw;
+        padding: 0 20px;
+      }
+    }
+  </style>
+
+</head>
+
+<body>
+  <div class="container-fluid">
+    <main>
+      <div id="story">
+        <h1>Our Story</h1>
+      </div>
+      <br>
+      <div id="custComments">
+            <section class="box-1">
+              <ul class="nav d-flex flex-column mx-3">
+                <li id="activeOne" class="nav-item">
+                  <a class="nav-link" aria-current="page" href="javascript:;">Our Story</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/Inthenews">In the News</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/Charitable_Giving">Charitable Giving</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/Scrip">Scrip</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/Lets_Get_Social">Let's Get Social</a>
+                </li>
+              </ul>
+          </section>
+          
+            <section class="box-2">
+              <div>
+                <p class="p1"><span class="s1"></span></p>
+                <p class="p1"><span class="s1">With a desire to bring the best of the best in Hispanic foods to the local
+                    community, Rancho San Miguel Markets founders searched far and wide to find just the right combination of
+                    products and provide freshness beyond compare.&nbsp; If you enjoy the Hispanic culture, you&rsquo;ll simply
+                    be treated to an experience like no other at Rancho San Miguel Markets.&nbsp; You&rsquo;ll know right away
+                    that this isn&rsquo;t your ordinary supermarket.</span><span class="s2"><span
+                      class="Apple-converted-space">&nbsp;</span></span></p>
+                <p class="p3">Our produce department works hard to provide you with a wide variety of the most vibrant fruits
+                  and vegetables so that you can feel good about feeding your family-all within your budget.<span
+                    class="Apple-converted-space">&nbsp;<span>&nbsp;</span></span><span class="s3">Customer satisfaction is a
+                    high priority,</span><span>&nbsp;</span>that&rsquo;s why we continually restock to make sure that you are
+                  getting the freshest produce.<span class="Apple-converted-space">&nbsp;</span></p>
+                <p class="p5">Stop by our full-service meat department to find the freshest quality meat and seafood.<span
+                    class="Apple-converted-space">&nbsp;<span>&nbsp;</span></span>You can shop with confidence knowing that our
+                  meat is always USDA inspected and is cut daily. Whether you&rsquo;re looking for ready-to-eat, ready-to-make,
+                  or make-it-from-scratch, our full-service meat department has it all.<span
+                    class="Apple-converted-space">&nbsp;</span></p>
+                <p class="p3">Our bakery provides shoppers with traditional Hispanic pastries including concha, empanadas, fino,
+                  polvoron and much more.<span class="Apple-converted-space">&nbsp;<span>&nbsp;</span></span>We also can provide
+                  you with the perfect birthday, Quincea&ntilde;era or wedding cake.<span
+                    class="Apple-converted-space">&nbsp;</span></p>
+                <p class="p3">If you are looking for an authentic Hispanic quick grab and go meal, the Kitchen will meet all of
+                  your breakfast, lunch and dinner needs. We offer breakfast burritos, family meals, combination plates and
+                  more.<span class="Apple-converted-space">&nbsp;<span>&nbsp;</span></span>We can even cater your next office
+                  lunch.<span class="Apple-converted-space">&nbsp;</span></p>
+                <p class="p6"><span class="s2">Need to pick up some freshly made salsa for your next family gathering or
+                    celebration?<span class="Apple-converted-space">&nbsp;<span>&nbsp;</span></span>Stop by the Salsa Bar where
+                    you can choose from guacamole,<span>&nbsp;</span></span>rostisado, molcajete, salsa de arbol, salsa verde,
+                  ranchera or house made salsa.<span class="Apple-converted-space">&nbsp;<span>&nbsp;</span></span>Whatever kind
+                  you need-we have it.<span>&nbsp;</span><span class="Apple-converted-space">&nbsp;<span>&nbsp;</span></span>In
+                  the mood for a refreshing<span>&nbsp;</span><span class="s2">Agua frescas?<span
+                      class="Apple-converted-space">&nbsp;<span>&nbsp;</span></span>Yep-we&rsquo;ve got those too.<span
+                      class="Apple-converted-space">&nbsp;<span>&nbsp;</span></span>We offer<span>&nbsp;</span></span>horchata,
+                  watermelon, cucumber and lime, strawberry, pineapple, melon,<span>&nbsp;</span><span
+                    class="s2">tamarindo</span><span>&nbsp;</span>and Jamaica.&nbsp;Is seafood more your thing? Then you have to
+                  try our ceviches crab, fish campechana or camarones borrachos. Our Salsa Bar is like a store within the
+                  store!<span class="Apple-converted-space">&nbsp;</span></p>
+                <p class="p3">In addition to carrying the best variety of Hispanic items-we also offer your everyday items. Here
+                  at Rancho San Miguel Markets, we pride ourselves on shopping the competition for the best prices so you
+                  don&rsquo;t have to. If you are in the neighborhood, give Rancho San Miguel Markets a try!</p>
+                <p><strong>A Little History:</strong></p>
+                <figure>
+                  <table style="width: 100%; height: 1024px;">
+                    <tbody>
+                      <tr style="height: 25px;">
+                        <td style="width: 3.14701%; height: 25px;"><strong>1995</strong></td>
+                        <td style="width: 96.7824%; height: 25px;">PAQ, Inc. acquires two (2) Food 4 Less stores in Stockton,
+                          (March Lane &amp; Wilson Way) and one in Lodi, California.</td>
+                      </tr>
+                      <tr style="height: 25px;">
+                        <td style="width: 3.14701%; height: 25px;">&nbsp;</td>
+                        <td style="width: 96.7824%; height: 25px;">&nbsp;</td>
+                      </tr>
+                      <tr style="height: 25px;">
+                        <td style="width: 3.14701%; height: 25px;"><strong>1998</strong></td>
+                        <td style="width: 96.7824%; height: 25px;">PAQ, Inc. opens Food 4 Less in Weston Ranch located in
+                          Stockton, California.</td>
+                      </tr>
+                      <tr style="height: 25px;">
+                        <td style="width: 3.14701%; height: 25px;">&nbsp;</td>
+                        <td style="width: 96.7824%; height: 25px;">&nbsp;</td>
+                      </tr>
+                      <tr style="height: 25px;">
+                        <td style="width: 3.14701%; height: 25px;"><strong>1999</strong></td>
+                        <td style="width: 96.7824%; height: 25px;">PAQ, Inc. opens the Hammer Lane Food 4 Less location in North
+                          Stockton bringing the total Food 4 Less stores in Stockton to four.</td>
+                      </tr>
+                      <tr style="height: 25px;">
+                        <td style="width: 3.14701%; height: 25px;">&nbsp;</td>
+                        <td style="width: 96.7824%; height: 25px;">&nbsp;</td>
+                      </tr>
+                      <tr style="height: 25px;">
+                        <td style="width: 3.14701%; height: 25px;"><strong>2000</strong></td>
+                        <td style="width: 96.7824%; height: 25px;">Food 4 Less opens in Manteca, California</td>
+                      </tr>
+                      <tr style="height: 25px;">
+                        <td style="width: 3.14701%; height: 25px;">&nbsp;</td>
+                        <td style="width: 96.7824%; height: 25px;">&nbsp;</td>
+                      </tr>
+                      <tr style="height: 25px;">
+                        <td style="width: 3.14701%; height: 25px;"><strong>2002</strong></td>
+                        <td style="width: 96.7824%; height: 25px;">The City of Los Banos welcomes Food 4 Less to their city</td>
+                      </tr>
+                      <tr style="height: 25px;">
+                        <td style="width: 3.14701%; height: 25px;">&nbsp;</td>
+                        <td style="width: 96.7824%; height: 25px;">&nbsp;</td>
+                      </tr>
+                      <tr style="height: 25px;">
+                        <td style="width: 3.14701%; height: 25px;"><strong>2003</strong></td>
+                        <td style="width: 96.7824%; height: 25px;">PAQ, Inc. opens Food 4 Less in Salinas, California</td>
+                      </tr>
+                      <tr style="height: 25px;">
+                        <td style="width: 3.14701%; height: 25px;">&nbsp;</td>
+                        <td style="width: 96.7824%; height: 25px;">&nbsp;</td>
+                      </tr>
+                      <tr style="height: 49px;">
+                        <td style="width: 3.14701%; height: 49px;"><strong>2004</strong></td>
+                        <td style="width: 96.7824%; height: 49px;">May 5 &ndash; PAQ, Inc. introduces and opens their newest
+                          concept, Rancho San Miguel Market, to the Stockton area.<br>July 21 &ndash; Rancho San Miguel Market
+                          opened in Lodi, California</td>
+                      </tr>
+                      <tr style="height: 25px;">
+                        <td style="width: 3.14701%; height: 25px;">&nbsp;</td>
+                        <td style="width: 96.7824%; height: 25px;">&nbsp;</td>
+                      </tr>
+                      <tr style="height: 25px;">
+                        <td style="width: 3.14701%; height: 25px;"><strong>2005</strong></td>
+                        <td style="width: 96.7824%; height: 25px;">Food 4 Less opens in Ceres, California</td>
+                      </tr>
+                      <tr style="height: 25px;">
+                        <td style="width: 3.14701%; height: 25px;">&nbsp;</td>
+                        <td style="width: 96.7824%; height: 25px;">&nbsp;</td>
+                      </tr>
+                      <tr style="height: 49px;">
+                        <td style="width: 3.14701%; height: 49px;"><strong>2006</strong></td>
+                        <td style="width: 96.7824%; height: 49px;">PAQ, Inc. acquires the Souza Group Food 4 Less stores in Paso
+                          Robles, Atascadero and San Luis Obispo, becoming the leading grocery store in the Independent
+                          Warehouse Grocers Association of Northern California (IWGANC) with a total of 14 stores.</td>
+                      </tr>
+                      <tr style="height: 25px;">
+                        <td style="width: 3.14701%; height: 25px;">&nbsp;</td>
+                        <td style="width: 96.7824%; height: 25px;">&nbsp;</td>
+                      </tr>
+                      <tr style="height: 25px;">
+                        <td style="width: 3.14701%; height: 25px;"><strong>2007</strong></td>
+                        <td style="width: 96.7824%; height: 25px;">May &ndash; PAQ, Inc. continues to grow and opened a Rancho
+                          San Miguel Market in Merced, California</td>
+                      </tr>
+                      <tr style="height: 25px;">
+                        <td style="width: 3.14701%; height: 25px;">&nbsp;</td>
+                        <td style="width: 96.7824%; height: 25px;">&nbsp;</td>
+                      </tr>
+                      <tr style="height: 25px;">
+                        <td style="width: 3.14701%; height: 25px;"><strong>2008</strong></td>
+                        <td style="width: 96.7824%; height: 25px;">October 15 &ndash; Rancho San Miguel Market Madera,
+                          California opens its doors</td>
+                      </tr>
+                      <tr style="height: 25px;">
+                        <td style="width: 3.14701%; height: 25px;">&nbsp;</td>
+                        <td style="width: 96.7824%; height: 25px;">&nbsp;</td>
+                      </tr>
+                      <tr style="height: 25px;">
+                        <td style="width: 3.14701%; height: 25px;"><strong>2012</strong></td>
+                        <td style="width: 96.7824%; height: 25px;">June 30 &ndash; Rancho San Miguel Market Greenfield,
+                          California opens its doors</td>
+                      </tr>
+                      <tr style="height: 25px;">
+                        <td style="width: 3.14701%; height: 25px;">&nbsp;</td>
+                        <td style="width: 96.7824%; height: 25px;">&nbsp;</td>
+                      </tr>
+                      <tr style="height: 25px;">
+                        <td style="width: 3.14701%; height: 25px;"><strong>2015</strong></td>
+                        <td style="width: 96.7824%; height: 25px;">March 4 &ndash; Rancho San Miguel Market Livingston,
+                          California opens its doors</td>
+                      </tr>
+                      <tr style="height: 25px;">
+                        <td style="width: 3.14701%; height: 25px;">&nbsp;</td>
+                        <td style="width: 96.7824%; height: 25px;">&nbsp;</td>
+                      </tr>
+                      <tr style="height: 25px;">
+                        <td style="width: 3.14701%; height: 25px;"><strong>2017</strong></td>
+                        <td style="width: 96.7824%; height: 25px;">March 1 &ndash; Food 4 Less Arroyo Grande, California opens
+                          its doors bringing the total number of stores operated in California to 20</td>
+                      </tr>
+                      <tr style="height: 25px;">
+                        <td style="width: 3.14701%; height: 25px;">&nbsp;</td>
+                        <td style="width: 96.7824%; height: 25px;">&nbsp;</td>
+                      </tr>
+                      <tr style="height: 25px;">
+                        <td style="width: 3.14701%; height: 25px;"><strong>2018</strong></td>
+                        <td style="width: 96.7824%; height: 25px;">April 18 &ndash; PAQ, Inc. expands footprint into Sacramento
+                          with opening of Mack Road Food 4 Less&nbsp;store</td>
+                      </tr>
+                      <tr style="height: 25px;">
+                        <td style="width: 3.14701%; height: 25px;">&nbsp;</td>
+                        <td style="width: 96.7824%; height: 25px;">&nbsp;</td>
+                      </tr>
+                      <tr style="height: 25px;">
+                        <td style="width: 3.14701%; height: 25px;"><strong>2019</strong></td>
+                        <td style="width: 96.7824%; height: 25px;">November 29-PAQ, Inc. becomes a 100% Employee Owned Company
+                        </td>
+                      </tr>
+                      <tr style="height: 25px;">
+                        <td style="width: 3.14701%; height: 25px;">&nbsp;</td>
+                        <td style="width: 96.7824%; height: 25px;">&nbsp;</td>
+                      </tr>
+                      <tr style="height: 25px;">
+                        <td style="width: 3.14701%; height: 25px;"><strong>2020</strong></td>
+                        <td style="width: 96.7824%; height: 25px;">September 16-PAC, Inc. opens a Food 4 Less store on Rio
+                          Linda, CA October 7-PAC, Inc. opens a Food 4 Less store in Rancho Cordova, CA</td>
+                      </tr>
+                      <tr style="height: 25px;">
+                        <td style="width: 3.14701%; height: 25px;">&nbsp;</td>
+                        <td style="width: 96.7824%; height: 25px;">&nbsp;</td>
+                      </tr>
+                      <tr style="height: 25px;">
+                        <td style="width: 3.14701%; height: 25px;"><strong>2022</strong></td>
+                        <td style="width: 96.7824%; height: 25px;">March 2 &ndash; PAQ, Inc. opens a new Rancho San Miguel
+                          Market in Sacramento, CA</td>
+                      </tr>
+                      <tr style="height: 25px;">
+                        <td style="width: 3.14701%; height: 25px;">&nbsp;</td>
+                        <td style="width: 96.7824%; height: 25px;">&nbsp;</td>
+                      </tr>
+                      <tr style="height: 25px;">
+                        <td style="width: 3.14701%; height: 25px;"><strong>2023</strong></td>
+                        <td style="width: 96.7824%; height: 25px;">March &ndash; PAQ, Inc. Retail Support Centers (Lathrop &amp;
+                          Stockton) move to Lodi, CA. The new address is 3021 Reynolds Ranch Parkway, Suite 230-Lodi, CA 95240
+                        </td>
+                      </tr>
+                      <tr style="height: 26px;">
+                        <td style="width: 3.14701%; height: 26px;"></td>
+                        <td style="width: 96.7824%; height: 26px;"></td>
+                      </tr>
+                      <tr style="height: 25px;">
+                        <td style="width: 3.14701%; height: 25px;"><strong>2023</strong></td>
+                        <td style="width: 96.7824%; height: 25px;">October - PAQ, Inc. opens a Food 4 Less in Fairfield, CA</td>
+                      </tr>
+                      <tr>
+                        <td style="width: 3.14701%;"><strong>&nbsp;</strong></td>
+                        <td style="width: 96.7824%;"></td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </figure>
+            </section>
+            </div>
+    </main>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+
+</body>
+
+</html>
